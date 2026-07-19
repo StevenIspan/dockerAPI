@@ -23,7 +23,7 @@ def get_products():
     conn = get_connection()
     # RealDictCursor讓查詢結果直接是dict格式 方便轉JSON
     cur = conn.cursor(cursor_factory=psycopg2.extras.RealDictCursor)
-    cur.execute("SELECT * FROM products LIMIT 2;")
+    cur.execute("SELECT * FROM products LIMIT 10;")
     rows = cur.fetchall()
     cur.close()
     conn.close()
