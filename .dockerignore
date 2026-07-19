@@ -1,0 +1,7 @@
+#註解
+__pycache__/
+*.pyc
+.git 
+.gitignore
+.vscode
+XXXX.txt
