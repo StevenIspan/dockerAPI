@@ -19,7 +19,7 @@ def get_products():
     conn = get_connection()
     # DictCursor讓查詢結果直接是dict格式 方便轉JSON
     cur = conn.cursor(pymysql.cursors.DictCursor)
-    cur.execute("SELECT * FROM products LIMIT 10;")
+    cur.execute("SELECT * FROM products LIMIT 1;")
     rows = cur.fetchall()
     cur.close()
     conn.close()
