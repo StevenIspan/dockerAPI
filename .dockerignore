@@ -1,0 +1,14 @@
+# Python編譯快取目錄，容器內build時會自動重新產生，不需要複製進Image
+__pycache__/
+
+# Python編譯後的位元組碼檔案，同上，不需要包進Image
+*.pyc
+
+# Git版本控制的內部資料夾，跟容器執行完全無關，排除可縮小build context
+.git
+
+# Git忽略清單設定檔，只在本機開發用，容器不需要
+.gitignore
+
+# VS Code編輯器的專案設定資料夾，跟程式執行無關
+.vscode
